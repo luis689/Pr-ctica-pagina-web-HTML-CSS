@@ -1,0 +1,385 @@
+/*---------------------------------------------------------------------------------------------------------------------
+Universidad Nacional de Colombia
+Grafica Interactiva
+Hoja de estilos #2
+Luis Antonio Zuluaga Ramirez
+26/04/2020
+---------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------------------
+                                                        INDEX
+-----------------------------------------------------------------------------------------------------------------------*/
+/* Se agrego esta fuente para los menus*/
+@font-face {
+    src: url(Font/Thewitcher-jnOj.ttf);
+    font-family: 'witcher';
+}
+
+/*Se agrego esta fuente para los textos de parrafos*/
+@font-face {
+    src: url(Font/Enchanted\ Land.otf);
+    font-family: 'texto';
+}
+
+
+/*Se agrego esta fuente para titulos*/
+@font-face {
+    src: url(Font/Kingthings\ Foundation.ttf);
+    font-family: 'titulo';
+}
+
+body {
+    background-image: url(Imagenes/Paisaje_3.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+/*Menu lateral*/
+.H1 {
+    background-color: #000000;                                    /*Se asigna el color de fondo del menu*/
+    position: fixed;                                                /*Posicion fijada para que el menu siga presente cuando hay scroll*/
+    width: 50px;
+    height: 100%;                                                    /*El fondo del menu cubra todo el ancho de la pantalla*/    
+    left: 0;                                                        /*No hay margen a la izquierda*/    
+    top: 0;                                                 /*Nivel de transparencia*/
+    padding-bottom: 15px;                                           /*Aumenta la parte inferior del fondo del menu*/
+    overflow: hidden;
+    -webkit-transition: width 0.5s;
+}
+
+.menu {
+    width: 50px;
+    height: 50px;
+    background-image: url(Imagenes/menu.webp);
+    background-size: cover;
+}
+
+li {
+    margin-left: 20px;
+    margin-top: 50px;
+    font-family: witcher;
+    list-style: none;
+}
+
+.H1:hover {
+    width: 200px;
+}
+
+.a1 {
+    color: white;
+    font-size: 20px;
+}
+
+.a1:hover {
+    background-color: white;
+    color: black;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.div_body_1 {
+    background-color: white;
+    width: 70%;
+    height: 100%;
+    right: 220px;   
+    margin: auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-family: titulo;
+    font-size: 40px;
+}
+
+p {
+    font-family: texto;
+    font-size: 25px;
+}
+
+.contenedor {
+    width: 100%;                                                
+    height: 200px;                                                  /*Altura*/
+    background-color: transparent;  
+    display: flex;                                                  /*Se usa flex para que cada division se separe horizontalmente y equitativamente*/
+    flex-wrap: wrap;                                                /*Se respeta el tamaño establecido para cada division*/
+    justify-content: center;                                        /*Centrar las divisiones*/
+}
+
+/*Propiedades del circulo que dirije a la pagina Geografia*/
+.circulo1  {
+    background-image: url(Imagenes/Mapa_Reinos_del_norte.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;                                            /*Crea un borde circular del cuadrado establecido anteriormente*/
+}
+
+/*Propiedades del circulo que dirije a la pagina Actividades*/
+.circulo2 {
+    background-image: url(Imagenes/caballos.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    margin-left: 50px;
+}
+
+/*Propiedades del circulo que dirije a la pagina Historia*/
+.circulo3 {
+    background-image: url(Imagenes/historia.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    margin-left: 50px;
+}
+
+/*Propiedades del circulo que dirije a la pagina Razas*/
+.circulo4 {
+    background-image: url(Imagenes/The-Witcher-Razas-El-Continente.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    margin-left: 50px;
+}
+
+/*Propiedades de la cabecera de los circulos que dirigen a las diferentes paginas*/
+.a3 {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+.sp2 {
+    font-family: titulo;
+    color: white;
+    font-size: 18px;
+    background-color: rgb(155, 46, 82);
+    padding: 10px;
+    border-radius: 20%;
+}
+
+/*Se encoge un poco todos los vinculos a otra pagina al hacer click*/
+.active1:active {
+    transform: scale(0.85);
+}
+
+
+/*----------------------------------------------------------------------------------------------------------------------
+                                                        Pagina Geografía
+-----------------------------------------------------------------------------------------------------------------------*/
+
+.div_body_2 {
+    background-color: white;
+    width: 70%;
+    height: 100%;
+    right: 220px;   
+    margin: auto;
+    padding: 20px;
+}
+
+.cont_1 {
+    width: 100%;
+    height: 400px;
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.map_1 {
+    width: 400px;
+    height: 400px;
+    background-image: url(Imagenes/Mapa_Reinos_del_norte.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 50px;
+}
+
+.map_2 {
+    width: 400px;
+    height: 400px;
+    background-image: url(Imagenes/mapa.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 50px;
+}
+
+.tabla {
+    margin:  auto;
+    table-layout: fixed;
+    text-align: center;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+.talba, th, td {
+    border: 2px solid black;
+}
+
+.bosque {
+    background-image: url(Imagenes/bosque.jpg);
+    background-size: cover;
+    width: 300px;
+    height: 200px;
+}
+
+.agua {
+    background-image: url(Imagenes/rios.jpg);
+    background-size: cover;
+}
+
+.montaña {
+    background-image: url(Imagenes/montaña.jpg);
+    background-size: cover;
+}
+.isla {
+    background-image: url(Imagenes/isla.jpg);
+    background-size: cover;
+}
+
+.li_g {
+    margin-top: 2px;
+}
+
+.a_g {
+    text-decoration: none;
+    font-family: texto;
+    font-size: 25px;
+}
+
+
+/*----------------------------------------------------------------------------------------------------------------------
+                                                        Pagina Historia
+-----------------------------------------------------------------------------------------------------------------------*/
+
+.div_body_3 {
+    background-color: white;
+    width: 70%;
+    height: 100%;
+    right: 220px;   
+    margin: auto;
+    padding: 20px;
+}
+
+
+/*----------------------------------------------------------------------------------------------------------------------
+                                                        Pagina Actividades
+-----------------------------------------------------------------------------------------------------------------------*/
+
+.div_body_4 {
+    background-color: white;
+    width: 70%;
+    height: 100%;
+    right: 220px;   
+    margin: auto;
+    padding: 20px;
+}
+
+.div_2 {
+    width: 80%;
+    height: 200px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.gwent {
+    width: 30%;
+    float: left;
+}
+
+
+/*--------------------------------------------------------------------------------------------------------------
+                                                Pagina Razas
+----------------------------------------------------------------------------------------------------------------*/
+
+.div_5 {
+    background-color: white;
+    width: 70%;
+    height: 100%;
+    right: 220px;   
+    margin: auto;
+    padding: 20px;
+}
+
+.h1_6 {
+    padding-top: 75px;
+    font-family: titulo;
+    font-size: 50px;
+}
+
+.ul_p {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.a_p {
+    margin-top: 5px;
+    text-decoration: none;
+    color: blue;
+}
+
+.inicio {
+    font-family: texto;
+    font-size: 20px;
+    color: rgb(37, 25, 211) ;
+}
+
+.div_5 {
+    width: 70%;
+    margin: auto;
+}
+
+p {
+    font-family: texto;
+    font-size: 30px;
+}
+
+h3 {
+    text-decoration: none;
+    font-family: titulo;
+    font-size: 35px;
+}
+
+.img_p {
+    width: 30%;
+    height: 30%;
+}
+
+pre {
+    font-family: titulo;
+    font-size: 20px;
+}
+
+.li_r {
+    margin-top: 2px;
+}
+
+/*--------------------------------------------------------------------------------------------------------------
+                                                Pagina Creditos
+----------------------------------------------------------------------------------------------------------------*/
+.div_cre {
+    background-color: white;
+    width: 70%;
+    height: 100%;
+    right: 220px;   
+    margin: auto;
+    padding: 20px;
+}
+
+.map_nav {
+    background-image: url(Imagenes/mapa_navegacion.PNG);
+    width: 80%;
+    height: 80%;
+    margin: auto;
+}

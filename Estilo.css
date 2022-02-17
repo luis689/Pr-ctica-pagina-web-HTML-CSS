@@ -1,0 +1,457 @@
+/*---------------------------------------------------------------------------------------------------------------------
+Universidad Nacional de Colombia
+Grafica Interactiva
+Hoja de estilos #1
+Luis Antonio Zuluaga Ramirez
+26/04/2020
+---------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------------------
+                                                        INDEX
+-----------------------------------------------------------------------------------------------------------------------*/
+
+/* Se establece el fondo de la pagina incial del sitio web*/
+.body_1 {              
+    background-image: url(Imagenes/w1.jpg);                         /*Imagen de fondo*/
+    background-size: cover;                                         /*La imagen cubra todo el view port*/
+    background-repeat: no-repeat;                                   /*En caso de no cubrir el view port, que no se repita la imagen*/
+    background-attachment: fixed;                                   /*Mantener el fondo fijo cuando hay scroll*/
+}
+
+
+/* Se agrego esta fuente para los menus*/
+@font-face {
+    src: url(Font/Thewitcher-jnOj.ttf);
+    font-family: 'witcher';
+}
+
+/*Se agrego esta fuente para los textos de parrafos*/
+@font-face {
+    src: url(Font/Enchanted\ Land.otf);
+    font-family: 'texto';
+}
+
+
+/*Se agrego esta fuente para titulos*/
+@font-face {
+    src: url(Font/Kingthings\ Foundation.ttf);
+    font-family: 'titulo';
+}
+
+
+/*Parametros para el titulo de la pagina actual*/
+.h1_1 {
+    margin-top: 150px;                                              /*Margen de la parte superior al texto del titulo*/
+    text-align: center;                                             /*Centrar el texto*/
+    font-family: titulo;                                            /*Se asigna la fuente del titulo*/
+    font-size: 40px;                                                /*Se asigna el tamaño de la fuente*/
+}
+
+
+/*Parametros del parrafo de la pagina*/
+.p1 {
+    text-align: center;                                             /*Centrar el texto*/
+    margin-left: 150px;                                             /*Margen izquierda del texto en pixeles*/
+    margin-right: 150px;                                            /*Margen derecha del texto en pixeles*/
+    font-family: texto;                                             /*Se asigna la fuente al texto*/
+    font-size: 30px;                                                /*Se asigna el tamaño de la fuente del texto*/
+    color: white;                                                 /*Se asigna el color de las letras del parrafo*/  
+}
+
+
+/*Se asigna la fuente para destacar un pequeño texto*/
+.sp1 {
+    font-family: witcher;
+}
+
+/*Quitar color y subrallado de los vinculos*/
+a {  
+    text-decoration: none;
+}
+
+
+/*Se establecen las propiedades del menu*/
+.H1 {
+    background-color: #000000;                                    /*Se asigna el color de fondo del menu*/
+    position: fixed;                                                /*Posicion fijada para que el menu siga presente cuando hay scroll*/
+    width: 100%;                                                    /*El fondo del menu cubra todo el ancho de la pantalla*/    
+    left: 0;                                                        /*No hay margen a la izquierda*/    
+    top: 0;                                                         /*No hay margen superior*/
+    opacity: 70%;                                                   /*Nivel de transparencia*/
+    padding-bottom: 15px;                                           /*Aumenta la parte inferior del fondo del menu*/
+}
+
+
+/*Se asigna el tipo de letra para el menu*/
+li {    
+    font-family: witcher;
+    list-style-type: none;
+}
+
+/*Organiza el menu de forma horizontal*/
+.a1 {
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    float: left;                                                    /*Organiza el menu de forma horizontal*/
+    padding-right: 40px;
+}
+
+/*Contenedor de los circulos con link a las otras paginas*/
+.contenedor {
+    width: 100%;                                                
+    height: 200px;                                                  /*Altura*/
+    background-color: transparent;  
+    display: flex;                                                  /*Se usa flex para que cada division se separe horizontalmente y equitativamente*/
+    flex-wrap: wrap;                                                /*Se respeta el tamaño establecido para cada division*/
+    justify-content: center;                                        /*Centrar las divisiones*/
+}
+
+/*Propiedades del circulo que dirije a la pagina Geografia*/
+.circulo1  {
+    background-image: url(Imagenes/Mapa_Reinos_del_norte.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;                                            /*Crea un borde circular del cuadrado establecido anteriormente*/
+}
+
+/*Propiedades del circulo que dirije a la pagina Actividades*/
+.circulo2 {
+    background-image: url(Imagenes/caballos.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    margin-left: 50px;
+}
+
+/*Propiedades del circulo que dirije a la pagina Historia*/
+.circulo3 {
+    background-image: url(Imagenes/historia.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    margin-left: 50px;
+}
+
+/*Propiedades del circulo que dirije a la pagina Razas*/
+.circulo4 {
+    background-image: url(Imagenes/The-Witcher-Razas-El-Continente.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    margin-left: 50px;
+}
+
+/*Propiedades de la cabecera de los circulos que dirigen a las diferentes paginas*/
+.a3 {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+.sp2 {
+    font-family: titulo;
+    color: white;
+    font-size: 18px;
+    background-color: rgb(155, 46, 82);
+    padding: 10px;
+    border-radius: 20%;
+}
+
+/*Se encoge un poco todos los vinculos a otra pagina al hacer click*/
+.active1:active {
+    transform: scale(0.85);
+}
+
+/*--------------------------------------------------------------------------------------------------------------
+                                                Pagina Geografía
+----------------------------------------------------------------------------------------------------------------*/
+
+.body_3 {
+    background-image: url(Imagenes/w2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.h1_2 {
+    margin-top: 150px;
+    text-align: center;
+    color: goldenrod;
+    font-family: titulo;
+    font-size: 50px;
+}
+
+.p2::first-letter{
+    font-family: titulo;
+    font-size: 50px;
+    color: gold;
+}
+
+.p2 {
+    color: darkgrey;
+    margin-left: 150px;
+    margin-right: 150px;
+    font-family: texto;
+    font-size: 25px;
+}
+
+.cont_1 {
+    width: 100%;
+    height: 400px;
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.map_1 {
+    width: 400px;
+    height: 400px;
+    background-image: url(Imagenes/Mapa_Reinos_del_norte.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 50px;
+}
+
+.map_2 {
+    width: 400px;
+    height: 400px;
+    background-image: url(Imagenes/mapa.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 50px;
+}
+
+.sp3 {
+    font-family: titulo;
+    color: white;
+    font-size: 18px;
+    background-color: rgb(91, 102, 52);
+    padding: 10px;
+    border-radius: 20%;
+}
+
+.tabla {
+    margin:  auto;
+    table-layout: fixed;
+    text-align: center;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+.talba, th, td {
+    border: 2px solid black;
+}
+
+.bosque {
+    background-image: url(Imagenes/bosque.jpg);
+    background-size: cover;
+    width: 300px;
+    height: 200px;
+}
+
+.agua {
+    background-image: url(Imagenes/rios.jpg);
+    background-size: cover;
+}
+
+.montaña {
+    background-image: url(Imagenes/montaña.jpg);
+    background-size: cover;
+}
+.isla {
+    background-image: url(Imagenes/isla.jpg);
+    background-size: cover;
+}
+
+/*--------------------------------------------------------------------------------------------------------------
+                                                Pagina Actividades
+----------------------------------------------------------------------------------------------------------------*/
+
+.body_2 {
+    background-image: url(Imagenes/w4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.div_2 {
+    width: 80%;
+    height: 250px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.h1_3 {
+    margin-top: 5%;
+    color: white;
+    font-family: titulo;
+    font-size: 50px;
+    text-align: center;
+}
+
+.h1_4 {
+    color: rgb(139, 160, 161);
+    font-family: titulo;
+    font-size: 30px;
+    text-align: left;
+}
+.p3 {
+    font-family: texto;
+    color: gainsboro;
+    font-size: 30px;
+}
+
+.gwent {
+    width: 30%;
+    float: left;
+}
+
+/*--------------------------------------------------------------------------------------------------------------
+                                                Pagina Historia
+----------------------------------------------------------------------------------------------------------------*/
+.body_4 {
+    background-image: url(Imagenes/guerra.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.h1_5 {
+    font-family: titulo;
+    font-size: 50px;
+    margin-top: 5%;
+    text-align: center;
+}
+
+.p4 {
+    width: 70%;
+    font-family: texto;
+    font-size: 30px;
+    color: black;
+    text-align: center;
+    margin-top: 100px;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    opacity: 60%;
+    border-radius: 5%;
+}
+
+/*--------------------------------------------------------------------------------------------------------------
+                                                Pagina Razas
+----------------------------------------------------------------------------------------------------------------*/
+
+.body_5 {
+    background-image: url(Imagenes/w5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.H_2 {
+    position: relative;
+    background-image: url(Imagenes/The-Witcher-Razas-El-Continente.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 100px;
+    left: 17.5%;
+    width: 70%;
+    height: 300px;
+    border-radius: 2%;
+    text-align: center;
+    opacity: 100%;
+}
+.h1_6 {
+    padding-top: 75px;
+    font-family: titulo;
+    font-size: 50px;
+    color: rgb(245, 93, 4);
+}
+
+.ul_p {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.a_p {
+    color: olive;
+}
+
+.inicio {
+    font-family: texto;
+    font-size: 20px;
+    color: lightpink ;
+}
+
+.div_5 {
+    width: 70%;
+    margin: auto;
+}
+
+p {
+    font-family: texto;
+    color: white;
+    font-size: 30px;
+}
+
+h3 {
+    text-decoration: none;
+    font-family: titulo;
+    font-size: 35px;
+    color: tomato;
+}
+
+.img_p {
+    width: 30%;
+    height: 30%;
+}
+
+pre {
+    font-family: titulo;
+    color: white;
+    font-size: 20px;
+}
+
+/*--------------------------------------------------------------------------------------------------------------
+                                                Pagina Creditos
+----------------------------------------------------------------------------------------------------------------*/
+.div_cre {
+    background-color: white;
+    width: 70%;
+    height: 100%;
+    right: 220px;   
+    margin: auto;
+    padding: 20px;
+}
+
+.map_nav {
+    width: 80%;
+    margin: auto;
+}
+
+.a_cre {
+    font-family: texto;
+    text-decoration: none;
+    color: blue;
+    font-size: 25px;
+}
+
+.p_cre {
+    color: black;
+    font-family: texto;
+    font-size: 25px;
+}
